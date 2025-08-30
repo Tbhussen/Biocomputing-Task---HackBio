@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
 wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
 mv wildtype.fna ../Tamim/
 rm wildtype.gbk.1
-grep 'tatatata' wildtype.fna | wc -w
+grep 'tatatata' wildtype.fna | wc -l
 tail -n +2 wildtype.gbk | wc -l
 grep 'LOCUS' wildtype.gbk | awk -F ' ' {'print $3'}
 grep 'SOURCE' wildtype.gbk | awk -F ' ' {'print $2" " $3'}
