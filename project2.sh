@@ -8,9 +8,15 @@ conda init
 conda --version
 conda create -n funtools python=3.10
 conda activate funtools
+
+#Installing figlet and printing my Name
 sudo apt-get install figlet
 figlet Tamim
+
+#Adding Channels
 conda config --add channels bioconda;conda config --add channels conda-forge
+
+# Installing Packages
 conda install bwa
 conda install blast
 conda install samtools bedtools bcftools fastp multiqc
